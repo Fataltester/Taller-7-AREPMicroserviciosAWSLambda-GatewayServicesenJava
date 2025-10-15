@@ -46,7 +46,55 @@ Se realizó el siguiente test
 
 <img width="1133" height="718" alt="image" src="https://github.com/user-attachments/assets/1b3d2da6-8f03-4bc1-be98-7a4af3d11837" />
 
+Finalmente publicamos el API y accedemos a el mediante el browser
+
+<img width="805" height="148" alt="image" src="https://github.com/user-attachments/assets/728f1f3d-7ed7-4df0-8f96-17c8dcf0fd6a" />
+
 Parte II
+
+Modificamos el código teniendo dos clases:
+
+* SecurityUtils -> imprime el nombre y contraseña, setea la contraseña a vacío y retorna el usuario ya modificado.
+* User -> contiene el nombre y la contraseña del usuario, con getters y setters
+
+Teniendo ya las clases, nuevamente generamos el .jar para subirlo a una nueva función lambda
+```bash
+mvn package
+```
+
+Al igual que en el paso anterior, configuramos la función lambda con java 21 y definimos la ruta para acceder al método requerido
+
+<img width="1597" height="702" alt="image" src="https://github.com/user-attachments/assets/ce65c566-a89e-4e46-8d83-51a18fd61269" />
+
+<img width="1651" height="190" alt="image" src="https://github.com/user-attachments/assets/329003cb-47fb-4b61-a46c-4d73327f55fc" />
+
+Se realizó el siguiente test
+
+<img width="1595" height="720" alt="image" src="https://github.com/user-attachments/assets/6c613eb4-6467-4c74-b243-7bb2bfdf33f0" />
+
+<img width="1593" height="713" alt="image" src="https://github.com/user-attachments/assets/2e96b25f-02e2-4b96-91e5-5b3dce11b06f" />
+
+Luego nos vamos al mismo api gateway creado anteriormente para exponer el servicio, creamos el método para exponer el login y al igual que en la parte 1 modificamos lo siguiente
+
+* Method Request
+
+<img width="1643" height="632" alt="image" src="https://github.com/user-attachments/assets/e9d7ee10-efc8-4b83-8fc6-2c639ff8d0a9" />
+
+* Integration Request
+
+<img width="1619" height="718" alt="image" src="https://github.com/user-attachments/assets/43ba1354-1f00-4a09-bc2f-57b1b684ef8c" />
+
+<img width="1332" height="476" alt="image" src="https://github.com/user-attachments/assets/81215774-0317-41db-b844-04fb3c114a61" />
+
+Se realizó el siguiente test
+
+<img width="1261" height="723" alt="image" src="https://github.com/user-attachments/assets/ae880898-0e16-4375-8ca8-273503b5fed3" />
+
+
+Finalmente publicamos el API y accedemos a el mediante el browser
+
+<img width="977" height="173" alt="image" src="https://github.com/user-attachments/assets/3c2b29fb-b821-47d6-9f0d-be088fc8f351" />
+
 
 
 
